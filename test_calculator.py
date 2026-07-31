@@ -12,8 +12,7 @@ def test_subtract():
 
 
 def test_multiply():
-    # Intentionally wrong expected value -> fails
-    assert multiply(3, 4) == 13
+    assert multiply(3, 4) == 12
 
 
 def test_divide():
@@ -30,10 +29,8 @@ def test_is_even_true():
 
 
 def test_is_even_false():
-    # Intentionally wrong assertion -> fails
-    assert is_even(7) is True
+    assert is_even(7) is False
 
 
 def test_add_negative():
-    # Intentionally wrong expected value -> fails
-    assert add(-1, -1) == 0
+    assert add(-1, -1) == -2
